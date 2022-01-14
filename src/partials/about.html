@@ -1,1 +1,63 @@
-<section>about</section>
+<section class="section">
+  <div class="container">
+    <p class="about-title">tradition and love</p>
+    <h2 class="about-text">how it’s made?</h2>
+    <div class="about-wrap">
+      <div class="about-wrap-image">
+        <picture>
+          <source
+            srcset="./images/about/about-cow-desc.png 1x, ./images/about/about-cow-desc-x2.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/about/about-cow-tab.png 1x, ./images/about/about-cow-tab-x2.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/about/about-cow-mob.png 1x, ./images/about/about-cow-mob-x2.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img class="about-img" src="./images/about/about-cow.png" alt="Коров'яче молоко" />
+        </picture>
+      </div>
+      <div class="about-wrap-text">
+        <p class="about-text-one">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <img
+          class="about-img-left about-img-hiden"
+          src="./images/about/about-left-milk.png"
+          width="50px"
+          alt="Відро з молоком"
+        />
+        <img
+          class="about-img-right about-img-hidennm"
+          src="./images/about/about-right-milk.png"
+          width="70px"
+          alt="Відро з молоком"
+        />
+        <div class="about-milk-img2"></div>
+
+        <p class="about-text-two">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. <br /><br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+
+        <!-- <img
+          class="about-milk-img"
+          src="./images/about/about-milk-desc.png"
+          alt="Відро з молоком"
+        /> -->
+        <button type="button" class="button--white about-btn">
+          <span class="about-btn-text">Read more</span>
+          <svg class="about-svg" width="10" height="16">
+            <use href="./images/sprite.svg#icon-Iron-red-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
