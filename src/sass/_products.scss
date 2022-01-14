@@ -1,61 +1,50 @@
 //480px, 768px, 1280px.
 
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul {
-  padding-left: 0;
-}
-
 .products {
   text-align: center;
 }
 .products__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
-  @media screen and (min-width: 480px) {
+  color: getColor('pink-color');
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
   }
 }
 .products__title {
   margin-bottom: 145px;
+  font-family: Titan One;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #d41443;
-  @media screen and (min-width: 480px) {
+  color: getColor('red-color');
+  @media screen and (min-width: 768px) {
     font-size: 55px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
     font-size: 58px;
   }
 }
 .products-exemple {
-  @media screen and (min-width: 480px) {
+  margin-bottom: 100px;
+  @media screen and (min-width: 768px) {
     display: flex;
-    text-align: center;
     justify-content: center;
+    margin-bottom: 112px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
   }
 }
 .products-exemple__item {
@@ -64,17 +53,25 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 485px;
   border-radius: 24px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     flex-basis: 220px;
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     flex-basis: 329px;
     height: 525px;
     &:not(:last-child) {
@@ -83,16 +80,40 @@ ul {
   }
 
   &:nth-child(1) {
-    background-color: #ffb8ca;
+    background-color: getColor('another-bg-color');
+    &::before {
+      background-image: url(../images/products/product1.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product1_2x.png);
+      }
+    }
   }
   &:nth-child(2) {
     background-color: #f0d1a5;
+    &::before {
+      background-image: url(../images/products/product2.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product2_2x.png);
+      }
+    }
   }
   &:nth-child(3) {
     background-color: #c2e297;
-  }
-  &:not(:last-child) {
-    margin-bottom: 130px;
+    &::before {
+      background-image: url(../images/products/product3.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product3_2x.png);
+      }
+    }
   }
 
   &::before {
@@ -104,28 +125,35 @@ ul {
     width: 250px;
     height: 252px;
     background-repeat: no-repeat;
-    background-image: url(../images/products/product1.png);
-    @media screen and (min-width: 480px) {
+
+    background-size: contain;
+    @media screen and (min-width: 768px) {
       width: 220px;
       height: 226px;
-      top: -122px;
+      top: -105px;
       left: 0;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
       width: 335px;
       height: 335px;
+      top: -210px;
     }
   }
 }
 
 .products-exemple__title {
+  margin-top: 95px;
   font-family: Titan One;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: getColor('white-color');
   @media screen and (min-width: 768px) {
+    margin-top: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 165px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -139,7 +167,7 @@ ul {
   font-size: 14px;
   line-height: 1.52;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: getColor('white-color');
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.76;
