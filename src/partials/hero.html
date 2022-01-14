@@ -1,32 +1,65 @@
 <section class="hero">
 
-    <h1 class="general-title">ice cream made with <span>passion</span></h1>
+    <h1 class="general-title hero-heading">ice cream made with <span class="heading-accent">passion</span></h1>
 
     <ul class="hero-links list">
         <li>
-            <button class="button--red hero-links-item">Products</button>
+            <a href="#products" class="button--red hero-button">Products</a>
         </li>
         <li>
-            <button class="button--white hero-links-item">How it’s made?</button>
+            <a href="#about" class="button--white hero-button">How it’s made?</a>
         </li>
     </ul>
 
     <div class="hero-bg-circle"></div>
 
     <ul class="hero-numbers list">
-        <li><span class="numeral">16</span>cafes</li>
-        <li><span>23</span>food trucks</li>
+        <li class="hero-numbers-item">
+            <span class="hero-numbers-numeral">16</span>
+            <span class="hero-numbers-text">cafes</span>
+            <div class="hero-numbers-circle"></div>
+        </li>
+        <li class="hero-numbers-item">
+            <span class="hero-numbers-numeral">23</span>
+            food trucks
+            <div class="hero-numbers-circle"></div>
+        </li>
     </ul>
 
     <div class="hero-about">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button type="button">
-            <svg height="12" width="20">
+        <p class="hero-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <button class="hero-about-button" type="button">
+            <svg height="10" width="6" class="about-button-icon">
                 <use href="./images/sprite.svg#arrow-long"></use>
             </svg>
         </button>
     </div>
 
-   
+   <picture class="hero-icecream-image">
+       <source srcset="./images/header-hero/hero-icecream.png 1x, ./images/header-hero/hero-icecream@2x.png 2x" media="(min-width:1280px)">
+        <source srcset="./images/header-hero/hero-icecream-tablet.png 1x, ./images/header-hero/hero-icecream-tablet@2x.png 2x"
+        media="(min-width:768px)">
+        <source srcset="./images/header-hero/hero-icecream-mobile.png 1x, ./images/header-hero/hero-icecream-mobile@2x.png 2x"
+            media="(max-width:767px)">
+       <img src="./images/header-hero/hero-icecream.png" alt="Ice cream">
+   </picture>
+
+<picture class="hero-milk-image">
+    <source srcset="./images/header-hero/hero-milk.png 1x, ./images/header-hero/hero-milk@2x.png 2x"
+        media="(min-width:1280px)">
+    <source
+        srcset="./images/header-hero/hero-milk-tablet.png 1x, ./images/header-hero/hero-milk-tablet@2x.png 2x"
+        media="(min-width:768px)">
+    <img src="./images/header-hero/hero-milk.png" alt="Milk">
+</picture>
+
+<picture class="hero-girl-image">
+    <source srcset="./images/header-hero/hero-girl.png 1x, ./images/header-hero/hero-girl@2x.png 2x"
+        media="(min-width:1280px)">
+    <source
+        srcset="./images/header-hero/hero-girl-tablet.png 1x, ./images/header-hero/hero-girl-tablet@2x.png 2x"
+        media="(min-width:768px)">
+    <img src="./images/header-hero/hero-girl.png" alt="Girl">
+</picture>
 
 </section>
