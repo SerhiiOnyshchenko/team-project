@@ -1,1 +1,52 @@
-<header>header</header>
+<header class="site-header">
+    <a href="#" class="header-logo">
+        <img src="./images/header-hero/logo.png" alt="Логотип" width="50" class="logo-icon">
+        <span class="logo-text">Icecream</span>
+    </a>
+
+    <nav class="header-nav">
+        <ul class="nav-list list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About us</li>
+            <li class="nav-item">How it’s made?</li>
+            <li class="nav-item">Our products</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </nav>
+
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg height="12" width="20">
+            <use href="./images/sprite.svg#burger"></use>
+        </svg>
+    </button>
+
+    <button type="button" class="header-btn">
+        Buy now 
+        <svg height="12" width="20">
+            <use href="./images/sprite.svg#arrow-short"></use>
+        </svg>
+    </button>
+    
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg height="12" width="20">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <button type="button" class="header-menu-btn">
+            Buy now
+            <svg height="12" width="20">
+                <use href="./images/sprite.svg#arrow-short"></use>
+            </svg>
+        </button>
+
+        <ul class="menu-list list">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">About us</li>
+            <li class="menu-item">How it’s made?</li>
+            <li class="menu-item">Our products</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+    </div>
+</header>
