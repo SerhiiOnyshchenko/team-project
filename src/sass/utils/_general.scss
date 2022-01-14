@@ -1,70 +1,86 @@
-@import "../utils/colors";
+@import '../utils/colors';
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
-	font-family: "Titan One", cursive;
-	font-family: "DM Sans", sans-serif;
-	font-size: 14px;
-	line-height: 1.52;
-	letter-spacing: 0.04em;
+  font-family: 'Titan One', cursive;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
 
-	background: getColor("main-bg-color");
-	color: getColor("main-color");
+  background: getColor('main-bg-color');
+  color: getColor('main-color');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
-	max-width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
-box-sizing: border-box;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .selector {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .button--red {
-	display: flex;
-	align-items: center;
-	padding: 10px 23px;
-	color: getColor("white-color");
-	background: getColor("button-bg-red-color");
-	border-radius: 20px;
-	line-height: 1.28;cursor: pointer;
-	&:hover,
-	&:focus {
-		background: getColor("button-bg-red-hf-color");
-	}
+  display: flex;
+  align-items: center;
+  padding: 10px 23px;
+  color: getColor('white-color');
+  background: getColor('button-bg-red-color');
+  border-radius: 20px;
+  line-height: 1.28;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: getColor('button-bg-red-hf-color');
+  }
 }
 .button--white {
-	display: flex;
-	align-items: center;
-	padding: 10px 23px;
-	color: getColor("red-color");
-	background: getColor("button-bg-white-color");
-	border-radius: 20px;
-	line-height: 1.28;cursor: pointer;
-	&:hover,
-	&:focus {
-		background: getColor("button-bg-white-hf-color");
-	}
+  display: flex;
+  align-items: center;
+  padding: 10px 23px;
+  color: getColor('red-color');
+  background: getColor('button-bg-white-color');
+  border-radius: 20px;
+  line-height: 1.28;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: getColor('button-bg-white-hf-color');
+  }
 }
 
 .general-title {
-	font-family: Titan One;
-	font-size: 34px;
-	line-height: 1.15;
-	text-transform: uppercase;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
