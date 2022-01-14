@@ -1,16 +1,17 @@
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: getColor('another-bg-color');
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
-
+.header {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
-  text-decoration: none;
 
   align-items: center;
 }
@@ -33,16 +34,53 @@
 .nav-list {
   display: flex;
 }
+.nav-item > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: getColor('white-color');
+  &:hover,
+  &:focus {
+    color: getColor('red-color');
+  }
+}
+.nav-item:not(:last-child) {
+  margin-right: 35px;
+}
 
-.header-btn {
+.header__button {
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 30px;
+
   width: 160px;
   height: 44px;
-  border-radius: 22px;
-  border: none;
-  background-color: getColor('white-color');
-  color: getColor('red-color');
-  @media screen and (max-width: 767px) {
+
+  font-size: 16px;
+  font-weight: 700;
+
+  @media screen and (max-width: 549px) {
     display: none;
+  }
+}
+
+.header__button-menu {
+  justify-content: center;
+  // padding-left: 48px;
+  // padding-right: 48px;
+
+  width: 209px;
+  height: 44px;
+
+  margin-bottom: 19px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+  svg {
+    margin-left: 15px;
   }
 }
 
@@ -57,20 +95,52 @@
     display: none;
   }
 }
-
+.menu-toggle.js-close-menu {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+}
 .mobile-menu {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 250px;
   height: 100vh;
+  padding: 60px 21px;
   background-color: getColor('manu-bg-color');
 
   transform: translateX(100%);
 
   transition: transform 300ms linear;
+
+  @media screen and (min-width: 768px) {
+    width: 70vw;
+    padding: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
   transform: translateX(0);
+}
+
+.menu-item {
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+  &:hover,
+  &:focus {
+    color: getColor('red-color');
+  }
+}
+
+.menu-link {
+  display: block;
+  font-weight: 700;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: getColor('white-color');
 }
