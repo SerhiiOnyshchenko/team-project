@@ -1,0 +1,12 @@
+.advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 136px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
+}
