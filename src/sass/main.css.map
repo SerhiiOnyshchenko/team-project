@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG",
+    "sources": [
+        "main.scss",
+        "_header.scss",
+        "_hero.scss",
+        "_about.scss",
+        "_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
