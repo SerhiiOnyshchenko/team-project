@@ -4,6 +4,8 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './utils/general';
+@import './utils/colors';
 @import './header';
 @import './hero';
 @import './products';

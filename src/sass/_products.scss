@@ -68,6 +68,20 @@ ul {
   height: 485px;
   border-radius: 24px;
 
+  @media screen and (min-width: 480px) {
+    flex-basis: 220px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: 329px;
+    height: 525px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
   &:nth-child(1) {
     background-color: #ffb8ca;
   }
@@ -80,6 +94,7 @@ ul {
   &:not(:last-child) {
     margin-bottom: 130px;
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -88,20 +103,17 @@ ul {
     display: block;
     width: 250px;
     height: 252px;
-    background-color: transparent;
-    background-image: url(../images/products/product1.jpg);
-  }
-  @media screen and (min-width: 480px) {
-    width: 220px;
-    &:not(:last-child) {
-      margin-right: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/products/product1.png);
+    @media screen and (min-width: 480px) {
+      width: 220px;
+      height: 226px;
+      top: -122px;
+      left: 0;
     }
-  }
-  @media screen and (min-width: 768px) {
-    width: 329px;
-    height: 525px;
-    &:not(:last-child) {
-      margin-right: 24px;
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 335px;
     }
   }
 }
