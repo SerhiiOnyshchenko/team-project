@@ -1,0 +1,143 @@
+//480px, 768px, 1280px.
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+}
+
+.products {
+  text-align: center;
+}
+.products__label {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.products__title {
+  margin-bottom: 145px;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 480px) {
+    font-size: 55px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 58px;
+  }
+}
+.products-exemple {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.products-exemple__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+
+  &:nth-child(1) {
+    background-color: #ffb8ca;
+  }
+  &:nth-child(2) {
+    background-color: #f0d1a5;
+  }
+  &:nth-child(3) {
+    background-color: #c2e297;
+  }
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    left: 16px;
+    display: block;
+    width: 250px;
+    height: 252px;
+    background-color: transparent;
+    background-image: url(../images/products/product1.jpg);
+  }
+  @media screen and (min-width: 480px) {
+    width: 220px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 329px;
+    height: 525px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.products-exemple__title {
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.products-exemple__text {
+  width: 200px;
+  margin-bottom: 30px;
+
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.products-exemple__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background-image: url(../images/products/arrow-right.jpg);
+}
