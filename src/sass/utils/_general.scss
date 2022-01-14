@@ -17,10 +17,10 @@ body {
 }
 
 .container {
-	max-width: 320px;
+	max-width: 480px;
 	margin: 0 auto;
 	padding: 0 20px;
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .selector {
@@ -40,7 +40,8 @@ box-sizing: border-box;
 	color: getColor("white-color");
 	background: getColor("button-bg-red-color");
 	border-radius: 20px;
-	line-height: 1.28;cursor: pointer;
+	line-height: 1.28;
+	cursor: pointer;
 	&:hover,
 	&:focus {
 		background: getColor("button-bg-red-hf-color");
@@ -53,7 +54,8 @@ box-sizing: border-box;
 	color: getColor("red-color");
 	background: getColor("button-bg-white-color");
 	border-radius: 20px;
-	line-height: 1.28;cursor: pointer;
+	line-height: 1.28;
+	cursor: pointer;
 	&:hover,
 	&:focus {
 		background: getColor("button-bg-white-hf-color");
@@ -68,7 +70,15 @@ box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding: 0 34px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		padding: 0 115px;
+	}
 }

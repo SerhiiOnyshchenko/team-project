@@ -1,0 +1,76 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: getColor('another-bg-color');
+}
+
+.header-logo {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 20px;
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: getColor('red-color');
+}
+
+.header-nav {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.header-btn {
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background-color: getColor('white-color');
+  color: getColor('red-color');
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+// Mobile menu
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-toggle.js-open-menu {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: getColor('manu-bg-color');
+
+  transform: translateX(100%);
+
+  transition: transform 300ms linear;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
