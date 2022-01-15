@@ -1,9 +1,8 @@
-//480px, 768px, 1280px.
-
 .products {
   text-align: center;
 }
 .products__label {
+  margin-top: 120px;
   margin-bottom: 15px;
   font-family: Titan One;
   font-size: 18px;
@@ -52,7 +51,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 280px;
@@ -142,7 +140,9 @@
 }
 
 .products-exemple__title {
-  margin-top: 95px;
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 66px;
   font-family: Titan One;
   font-size: 20px;
   line-height: 1.15;
@@ -150,25 +150,36 @@
   text-transform: uppercase;
   color: getColor('white-color');
   @media screen and (min-width: 768px) {
-    margin-top: 150px;
+    margin-top: 155px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 165px;
+    margin-bottom: 70px;
     font-size: 30px;
     line-height: 1.13;
   }
+  &::after {
+    content: '. . .';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 6px;
+    color: getColor('white-color');
+  }
 }
+
 .products-exemple__text {
   width: 200px;
   margin-bottom: 30px;
-
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   letter-spacing: 0.04em;
   color: getColor('white-color');
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    width: 242px;
     font-size: 16px;
     line-height: 1.76;
   }
