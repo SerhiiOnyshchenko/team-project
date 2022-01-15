@@ -34,6 +34,7 @@
 .advantages-examples__item {
   margin-bottom: 39px;
   @media screen and (max-width: 767px) {
+    margin-bottom: 0;
     width: 230px;
   }
 }
