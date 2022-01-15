@@ -179,10 +179,9 @@
 
 .hero-numbers-circle {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-60%, -30%);
-  display: block;
+  top: -5px;
+  right: 10px;
+
   height: 16px;
   width: 16px;
   border-radius: 50%;
@@ -197,25 +196,43 @@
 .hero-numbers-item {
   margin-left: auto;
 
-  position: relative;
-  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 50px;
   font-size: 8px;
   font-weight: 400;
   color: getColor('white-color');
 
-  &:not(:last-child) {
-    margin-bottom: 13px;
+  &:last-child {
+    top: 57px;
+    @media screen and (min-width: 1280px) {
+      top: 91px;
+    }
   }
   @media screen and (min-width: 1280px) {
-    width: 80px;
+    min-width: 80px;
     font-size: 14px;
   }
 }
 .numbers-text-right {
-  padding-left: 9px;
+  position: absolute;
+  bottom: -8px;
+  right: 18px;
+  @media screen and (min-width: 1280px) {
+    bottom: -15px;
+    right: 28px;
+  }
 }
-// .numbers-text-left {
-// }
+.numbers-text-left {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  @media screen and (min-width: 1280px) {
+    bottom: -15px;
+    left: -25px;
+  }
+}
 
 .hero-icecream-image {
   position: absolute;
