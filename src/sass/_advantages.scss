@@ -10,7 +10,7 @@
 }
 
 .advantages {
-  padding-top: 39px;
+  // padding-top: 39px;
   padding-bottom: 97px;
   @media screen and (min-width: 768px) {
     padding-top: 66px;
@@ -51,10 +51,15 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
-  background-color: getColor('revers-bg-color');
   margin-top: 39px;
   margin-bottom: 16px;
-  // padding: 30px 0;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages-examples__item:nth-child(1)::before {
