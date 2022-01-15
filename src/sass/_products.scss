@@ -1,8 +1,15 @@
 .products {
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
 }
 .products__label {
-  margin-top: 120px;
   margin-bottom: 15px;
   font-family: Titan One;
   font-size: 18px;
@@ -28,6 +35,7 @@
   text-transform: uppercase;
   color: getColor('red-color');
   @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
     font-size: 55px;
   }
   @media screen and (min-width: 1280px) {
@@ -36,14 +44,9 @@
   }
 }
 .products-exemple {
-  margin-bottom: 100px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 112px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 120px;
   }
 }
 .products-exemple__item {
@@ -53,6 +56,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 160px;
   width: 280px;
   height: 485px;
   border-radius: 24px;
@@ -65,6 +69,7 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: 220px;
+    padding-top: 155px;
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -72,6 +77,7 @@
   @media screen and (min-width: 1280px) {
     flex-basis: 329px;
     height: 525px;
+    padding-top: 165px;
     &:not(:last-child) {
       margin-right: 24px;
     }
@@ -141,7 +147,6 @@
 
 .products-exemple__title {
   position: relative;
-  margin-top: 160px;
   margin-bottom: 66px;
   font-family: Titan One;
   font-size: 20px;
@@ -149,11 +154,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: getColor('white-color');
-  @media screen and (min-width: 768px) {
-    margin-top: 155px;
-  }
   @media screen and (min-width: 1280px) {
-    margin-top: 165px;
     margin-bottom: 70px;
     font-size: 30px;
     line-height: 1.13;
@@ -188,7 +189,5 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: none;
-  padding: 0;
   background-image: url(../images/products/arrow-right.jpg);
 }
