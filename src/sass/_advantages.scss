@@ -10,37 +10,30 @@
 }
 
 .advantages {
-  // padding-top: 39px;
   padding-bottom: 97px;
   @media screen and (min-width: 768px) {
-    padding-top: 66px;
     padding-bottom: 136px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 39px;
     padding-bottom: 139px;
   }
 }
 
 .advantages-examples {
+  margin-top: -39px;
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     display: flex;
-    margin-left: -60px;
+    column-gap: 60px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: -30px;
+    column-gap: 30px;
   }
 }
 
 .advantages-examples__item {
   @media screen and (max-width: 767px) {
     width: 230px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 60px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 30px;
   }
 }
 
