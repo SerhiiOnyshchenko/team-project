@@ -22,6 +22,9 @@
 .header-logo {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1280px) {
+    transform: translateX(-70px);
+  }
 }
 
 .logo-text {
@@ -46,6 +49,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   color: getColor('white-color');
+
+  transition: color 300ms linear;
   &:hover,
   &:focus {
     color: getColor('red-color');
@@ -129,7 +134,7 @@
 
   transform: translateX(100%);
 
-  transition: transform 300ms linear;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     width: 70vw;
@@ -162,6 +167,8 @@
   padding-top: 12px;
   padding-bottom: 12px;
   color: getColor('white-color');
+
+  transition: color 300ms linear;
   &:hover,
   &:focus {
     color: getColor('red-color');
