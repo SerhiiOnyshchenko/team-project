@@ -1,7 +1,7 @@
 .section {
-  //background-color: getColor('revers-bg-color');
-  background-color: #318add;
-  //padding-top: 125px;
+  background-color: getColor('revers-bg-color');
+  //background-color: #318add;
+
   padding-bottom: 40px;
   margin: 0 auto;
 
@@ -22,7 +22,7 @@
   }
   @media screen and (min-width: 1280px) {
     background-size: 1280px;
-    background-position: left top 200px;
+    background-position: left top 180px;
     background-image: url(../images/about/about-milk-desc.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-milk-desc-x2.png);
@@ -40,6 +40,7 @@
   text-transform: uppercase;
   color: getColor('pink-color');
   margin-bottom: 15px;
+  padding-top: 125px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
@@ -74,6 +75,15 @@
   width: 300px;
   justify-content: center;
   margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 465px;
+  }
 }
 .about-text-one {
   font-weight: 500;
