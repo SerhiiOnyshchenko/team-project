@@ -1,16 +1,17 @@
 .gallery {
-	background: linear-gradient(to bottom, getColor("revers-bg-color") 40%, getColor("main-bg-color") 40%);
+	background: linear-gradient(to bottom, getColor("revers-bg-color") 30%, getColor("main-bg-color") 30%);
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
 		grid-gap: 2px;
+		padding-bottom: 80px;
 		@media screen and (min-width:768px) {
 		grid-gap: 4px;
-		padding: 0 40px;
+		padding: 0 40px 120px;
 }
 		@media screen and (min-width:1280px) {
 		grid-gap: 6px;
-		padding: 0 20px;
+		padding: 0 20px 120px;
 }
 	}
 
