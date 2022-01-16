@@ -1,20 +1,21 @@
 $colors: (
-	"manu-bg-color": #E17992,
-	"main-bg-color": #ffffff,
-	"revers-bg-color":  #FFF5F6,
-	"another-bg-color": #FFB8CA,
-	"link-hf-color": #D41443,
-	"white-color": #ffffff,
-	"black-color": #000000,
-	"pink-color": #FFA5BA,
-	"red-color": #D41443,
-	"another-color": #907E82,
-	"button-bg-red-color": #D41342,
-	"button-bg-red-hf-color": #C7133E,
-	"button-bg-white-color": #ffffff,
-	"button-bg-white-hf-color": #ECEBEB,
+  'manu-bg-color': #e17992,
+  'main-bg-color': #ffffff,
+  'revers-bg-color': #fff5f6,
+  'another-bg-color': #ffb8ca,
+  'link-hf-color': #d41443,
+  'white-color': #ffffff,
+  'black-color': #000000,
+  'pink-color': #ffa5ba,
+  'red-color': #d41443,
+  'another-color': #907e82,
+  'button-bg-red-color': #d41342,
+  'button-bg-red-hf-color': #c7133e,
+  'button-bg-white-color': #ffffff,
+  'button-bg-white-hf-color': #ecebeb,
+  'review-section-bg-color': #fafafa,
 );
 
 @function getColor($key) {
-	@return map-get($colors, $key);
+  @return map-get($colors, $key);
 }
