@@ -46,7 +46,7 @@
     line-height: 1.86;
     letter-spacing: 0.04em;
 
-    background: getColor('black-color');
+    color: getColor('black-color');
     position: relative;
 
     /* background-image: repeating-linear-gradient(
@@ -60,7 +60,7 @@
 
   &__slide::before {
     content: '';
-    background: url(./images/customer-reviews/quotes.png);
+    background: url(../images/customer-reviews/quotes.png) no-repeat;
     width: 54px;
     height: 40px;
     display: block;
@@ -72,7 +72,7 @@
 
   &__swiper::after {
     content: '';
-    background: url(./images/customer-reviews/circlesgroup.png);
+    background: url(../images/customer-reviews/circlesgroup.png) no-repeat;
     width: 32px;
     height: 4px;
     display: block;
@@ -84,7 +84,7 @@
     font-size: 14px;
     line-height: 1.86;
     text-align: center;
-    background: getColor('black-color');
+    color: getColor('black-color');
 
     @media screen and (min-width: 768px) {
       margin-top: 14px;
@@ -101,7 +101,7 @@
 
   &__name::after {
     content: '';
-    background: url(./images/customer-reviews/pagination.png);
+    background: url(../images/customer-reviews/pagination.png) no-repeat;
     width: 73px;
     height: 12px;
     display: block;
