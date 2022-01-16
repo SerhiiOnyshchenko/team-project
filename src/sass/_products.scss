@@ -1,0 +1,193 @@
+.products {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
+}
+.products__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('pink-color');
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.products__title {
+  margin-bottom: 145px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: getColor('red-color');
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+    font-size: 55px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
+    font-size: 58px;
+  }
+}
+.products-exemple {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.products-exemple__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  width: 280px;
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 220px;
+    padding-top: 155px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: 329px;
+    padding-top: 165px;
+    padding-bottom: 50px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &:nth-child(1) {
+    background-color: getColor('another-bg-color');
+    &::before {
+      background-image: url(../images/products/product1.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product1_2x.png);
+      }
+    }
+  }
+  &:nth-child(2) {
+    background-color: #f0d1a5;
+    &::before {
+      background-image: url(../images/products/product2.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product2_2x.png);
+      }
+    }
+  }
+  &:nth-child(3) {
+    background-color: #c2e297;
+    &::before {
+      background-image: url(../images/products/product3.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/product3_2x.png);
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    left: 16px;
+    display: block;
+    width: 250px;
+    height: 252px;
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 226px;
+      top: -105px;
+      left: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 335px;
+      height: 335px;
+      top: -210px;
+    }
+  }
+}
+
+.products-exemple__title {
+  position: relative;
+  margin-bottom: 66px;
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('white-color');
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+  &::after {
+    content: '. . .';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 6px;
+    color: getColor('white-color');
+  }
+}
+
+.products-exemple__text {
+  width: 200px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  color: getColor('white-color');
+  @media screen and (min-width: 1280px) {
+    width: 242px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.products-exemple__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/products/arrow-right.jpg);
+}

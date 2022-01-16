@@ -1,18 +1,26 @@
 .site-header {
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  z-index: 3;
 }
 .header {
+  position: relative;
+}
+.header-wrap {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+  }
 }
 .header-logo {
   display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   align-items: center;
 }
 
@@ -61,12 +69,16 @@
   @media screen and (max-width: 549px) {
     display: none;
   }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 30px;
+  }
 }
 
 .header__button-menu {
   justify-content: center;
-  // padding-left: 48px;
-  // padding-right: 48px;
 
   width: 209px;
   height: 44px;
@@ -87,10 +99,10 @@
 // Mobile menu
 .menu-toggle {
   background-color: transparent;
-  border: none;
 }
 
 .menu-toggle.js-open-menu {
+  margin-left: auto;
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -104,7 +116,10 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 10;
+
   width: 250px;
+  min-width: 50vw;
   height: 100vh;
   padding: 60px 21px;
   background-color: getColor('manu-bg-color');
@@ -131,10 +146,6 @@
   &:last-child {
     border-bottom: 1px solid #e18298;
   }
-  &:hover,
-  &:focus {
-    color: getColor('red-color');
-  }
 }
 
 .menu-link {
@@ -143,4 +154,8 @@
   padding-top: 12px;
   padding-bottom: 12px;
   color: getColor('white-color');
+  &:hover,
+  &:focus {
+    color: getColor('red-color');
+  }
 }
