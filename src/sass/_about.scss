@@ -1,13 +1,11 @@
 .section {
   background-color: getColor('revers-bg-color');
-  // background-color: #318add;
-  padding-top: 125px;
+  padding-bottom: 40px;
   margin: 0 auto;
-
   background-image: url(../images/about/about-milk-mob.png);
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left 0 top 650px;
+  background-position: left bottom 150px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/about-milk-mob-x2.png);
   }
@@ -15,16 +13,14 @@
     background-image: none;
   }
   @media screen and (min-width: 1280px) {
-    background-position: left 0 top 295px;
-    max-width: 1280px;
+    background-size: 1280px;
+    background-position: bottom;
     background-image: url(../images/about/about-milk-desc.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-milk-desc-x2.png);
     }
   }
-  position: relative;
 }
-
 .about-title {
   font-family: Titan One;
   font-style: normal;
@@ -35,6 +31,7 @@
   text-transform: uppercase;
   color: getColor('pink-color');
   margin-bottom: 15px;
+  padding-top: 125px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
@@ -68,6 +65,16 @@
   padding: 45px 25px;
   width: 300px;
   justify-content: center;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 465px;
+  }
 }
 .about-text-one {
   font-weight: 500;
