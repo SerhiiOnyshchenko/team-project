@@ -171,7 +171,8 @@
   }
 }
 
-.products-exemple__text {
+.products-exemple__text,
+.extra-text {
   width: 200px;
   margin-bottom: 28px;
   font-weight: 700;
@@ -187,6 +188,9 @@
 }
 
 .products-exemple__btn {
+  display: block;
+  padding-top: 10px;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -194,4 +198,17 @@
   &:hover {
     background-color: getColor('button-bg-white-hf-color');
   }
+}
+.extra-text {
+  display: none;
+}
+
+#read-more-cream:checked ~ .extra-text {
+  display: block;
+}
+#read-more-coffee:checked ~ .extra-text {
+  display: block;
+}
+#read-more-milkshakes:checked ~ .extra-text {
+  display: block;
 }
