@@ -60,7 +60,7 @@
 
   &__slide::before {
     content: '';
-    background: url(./images/customer-reviews/quotes.png);
+    background: url(../images/customer-reviews/quotes.png);
     width: 54px;
     height: 40px;
     display: block;
@@ -72,7 +72,7 @@
 
   &__swiper::after {
     content: '';
-    background: url(./images/customer-reviews/circlesgroup.png);
+    background: url(../images/customer-reviews/circlesgroup.png);
     width: 32px;
     height: 4px;
     display: block;
@@ -101,7 +101,7 @@
 
   &__name::after {
     content: '';
-    background: url(./images/customer-reviews/pagination.png);
+    background: url(../images/customer-reviews/pagination.png);
     width: 73px;
     height: 12px;
     display: block;
