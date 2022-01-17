@@ -1,14 +1,9 @@
 
 .footer {
     background-color:getColor('revers-bg-color');
-
-  
 }
 
 .footer__wrapper {
-    overflow: hidden;
-    
-      
     @media screen and (min-width: 768px){
         display: flex;
         justify-content: space-between;
@@ -17,52 +12,63 @@
 
 
 .footer__text {
-    color: getColor('pink-color');
-    font-family: Titan One;
-font-style: normal;
-font-weight: normal;
+color: getColor('pink-color');
+font-family: Titan One;
 font-size: 18px;
 line-height: 1,16;
 text-transform: uppercase;
 max-width: 232px;
-margin-top: 113px;
+// margin-top: 113px;
+margin-bottom: 17px;
 @media screen and (min-width: 768px) {
-    margin-top: 165px;
+    // margin-top: 165px;
     max-width: 340px;
     font-size: 26px;
 line-height: 1.16;
 letter-spacing: 0.04em;
 }
+@media screen and (min-width: 1280px) {
+    max-width: none;
+    font-size: 30px;
+line-height: 1.13;
+}
 }
 
 .footer__top-text {
-    color: getColor('red-color');
-    font-family: Titan One;
-font-style: normal;
-font-weight: normal;
+color: getColor('red-color');
+font-family: Titan One;
 font-size: 34px;
 line-height: 1.14;
 letter-spacing: 0.04em;
 text-transform: uppercase;  
 max-width: 200px;
-margin-top: 17px;
+margin-bottom: 113px;
+// margin-top: 17px;
 @media screen and (min-width: 768px) {
     max-width: 340px;
     font-size: 48px;
-line-height: 55px;
-letter-spacing: 0.06em;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    margin-bottom: 165px;
+}
+@media screen and (min-width: 1280px) {
+    max-width: none;
+    font-size: 58px;
+    line-height: 1.14;
 }
 }
 
 .footer__right {
-    @media screen and (min-width: 768px){
-        display:flex;
-        flex-direction: column;
-        margin-top: 158px;
-        margin-left: 91px;
-        width: 50%;
-        
+@media screen and (min-width: 768px){
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 158px;
+    margin-left: 91px;
+    width: 50%;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 165px;
+    } 
 }
 
 .footer__left {
@@ -78,6 +84,9 @@ justify-content:flex-end;
 margin-top: 43px;
 @media screen and (min-width: 768px) {
     margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+    margin-bottom:20px;
 }
 }
 
@@ -115,6 +124,14 @@ font-size: 12px;
 line-height: 1,86;
 text-align: right; 
 margin-bottom: 43px;
+@media screen and (min-width: 768px) {
+font-size: 14px;
+}
+@media screen and (min-width: 1280px) {
+    font-size: 16px;
+    
+
+}
 }
 
 
