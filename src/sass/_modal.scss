@@ -92,7 +92,7 @@
   width: 100%;
   border: 1px solid getColor('white-color');
   border-radius: 10px;
-  background-color: transparent;
+  background-color: getColor('pinck-color');
   padding: 8px 10px;
   color: getColor('white-color');
   transition: border 300ms linear;
