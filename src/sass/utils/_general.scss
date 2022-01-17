@@ -13,7 +13,9 @@ body {
 	background: getColor("main-bg-color");
 	color: getColor("main-color");
 }
-
+.no-scrol{
+	overflow: hidden;
+}
 .container {
 	max-width: 480px;
 	margin: 0 auto;
