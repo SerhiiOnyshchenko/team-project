@@ -1,23 +1,32 @@
 .hero {
   background-color: getColor('another-bg-color');
-  padding-top: 80px;
+  overflow: hidden;
 }
 
 .hero-heading {
   width: 218px;
   font-size: 26px;
+  margin-bottom: 19px;
+  transform: scale(1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   color: getColor('white-color');
   @media screen and (min-width: 768px) {
     width: 162px;
     font-size: 22px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     width: 277px;
     font-size: 38px;
+    margin-bottom: 25px;
+  }
+  &:hover {
+    transform: scale(1.02);
   }
 }
 .heading-accent {
   font-size: 37px;
+  line-height: 0.9;
   font-weight: 400;
   color: getColor('red-color');
   @media screen and (min-width: 768px) {
@@ -48,15 +57,82 @@
   }
 }
 
+.hero-wrap {
+  position: relative;
+  height: 502px;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
+}
+
+.hero-main-block {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  z-index: 3;
+
+  @media screen and (min-width: 768px) {
+    top: 102px;
+    left: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 171px;
+    left: 0px;
+  }
+}
+
+.hero-bg-circle {
+  position: absolute;
+  top: 83px;
+  right: -62px;
+
+  z-index: 0;
+
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: getColor('pink-color');
+
+  animation: bgCircleOpacity 1000ms linear forwards;
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 322px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 52px;
+    right: 152px;
+    width: 538px;
+    height: 538px;
+  }
+}
+
 .hero-about {
+  position: absolute;
+  top: 370px;
+  left: 20px;
   @media screen and (max-width: 550px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    top: 292px;
+    left: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 485px;
+    left: 180px;
   }
 }
 .hero-about-text {
   font-size: 8px;
   width: 114px;
   color: getColor('white-color');
+
+  margin-bottom: 7px;
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     width: 200px;
@@ -78,6 +154,21 @@
   fill: getColor('red-color');
 }
 
+.hero-numbers-block {
+  position: absolute;
+  z-index: 1;
+  top: 96px;
+  right: -9px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 156px;
+    right: -18px;
+  }
+}
+
 .hero-numbers-numeral {
   position: relative;
   display: block;
@@ -86,52 +177,179 @@
   font-family: 'Titan One';
   color: getColor('red-color');
   z-index: 2;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+  }
 }
 
 .hero-numbers-circle {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-60%, -30%);
-  display: block;
+  top: -5px;
+  right: 10px;
+
   height: 16px;
   width: 16px;
   border-radius: 50%;
   background-color: getColor('white-color');
   z-index: 0;
+
+  transform-origin: 35%;
+  animation: rotatingCircle 3000ms linear infinite;
+
+  @media screen and (min-width: 1280px) {
+    height: 30px;
+    width: 30px;
+  }
 }
 .hero-numbers-item {
   margin-left: auto;
 
-  position: relative;
-  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 50px;
   font-size: 8px;
+  font-weight: 400;
   color: getColor('white-color');
 
-  &:not(:last-child) {
-    margin-bottom: 13px;
+  &:last-child {
+    top: 57px;
+    @media screen and (min-width: 1280px) {
+      top: 91px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 80px;
+    font-size: 14px;
   }
 }
-.hero-numbers-text {
-  padding-left: 15px;
+.numbers-text-right {
+  position: absolute;
+  bottom: -8px;
+  right: 18px;
+  @media screen and (min-width: 1280px) {
+    bottom: -15px;
+    right: 28px;
+  }
+}
+.numbers-text-left {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  @media screen and (min-width: 1280px) {
+    bottom: -15px;
+    left: -25px;
+  }
 }
 
-.hero-bg-circle {
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  background-color: getColor('pink-color');
-}
+.hero-icecream-image {
+  position: absolute;
+  top: 9px;
+  left: 81px;
 
-// .hero-icecream-image {
-// }
+  transform: translateY(100%);
+  animation: iceCreamSlide 1000ms linear forwards;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: 71px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 56px;
+    left: 119px;
+  }
+}
 .hero-milk-image {
+  position: absolute;
+  top: 245px;
+  left: 0;
+
+  transform: scale(0);
+  animation: milkScale 1000ms linear 1000ms forwards;
+
   @media screen and (max-width: 787px) {
     display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 429px;
+    left: -38px;
   }
 }
 .hero-girl-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  animation: girlScale 5000ms linear infinite;
+
   @media screen and (max-width: 787px) {
     display: none;
+  }
+}
+
+// Animation
+
+@keyframes rotatingCircle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes bgCircleOpacity {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: getColor('pink-color');
+  }
+}
+@keyframes iceCreamSlide {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes iceCreamScale {
+  0% {
+    transform: scale(100%);
+  }
+  20% {
+    transform: scale(110%);
+  }
+  80% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes milkScale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes girlScale {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
   }
 }
