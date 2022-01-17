@@ -84,6 +84,7 @@
   &:focus {
     border: 1px solid getColor('button-bg-red-hf-color');
     outline: none;
+    box-shadow: 2px 1px 10px 1px rgba(185, 152, 152, 0.75) inset;
   }
 }
 
@@ -92,7 +93,7 @@
   width: 100%;
   border: 1px solid getColor('white-color');
   border-radius: 10px;
-  background-color: getColor('pinck-color');
+  background-color: getColor('pink-color');
   padding: 8px 10px;
   color: getColor('white-color');
   transition: border 300ms linear;
@@ -100,6 +101,7 @@
   &:focus {
     border: 1px solid getColor('button-bg-red-hf-color');
     outline: none;
+    box-shadow: 2px 1px 10px 1px rgba(185, 152, 152, 0.75) inset;
   }
 }
 .comment-wrap {
@@ -123,5 +125,9 @@
   &:focus {
     border: 1px solid getColor('button-bg-red-hf-color');
     outline: none;
+    box-shadow: 2px 1px 10px 1px rgba(185, 152, 152, 0.75) inset;
   }
+}
+::placeholder {
+  color: getColor('white-color');
 }
