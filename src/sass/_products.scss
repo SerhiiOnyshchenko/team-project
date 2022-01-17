@@ -185,9 +185,16 @@
     line-height: 1.76;
   }
 }
+.products-exemple__extra-text {
+  display: none;
+}
+
 .products-exemple__btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url(../images/products/arrow-right.jpg);
+  background-color: getColor('white-color');
+  &:hover {
+    background-color: getColor('button-bg-white-hf-color');
+  }
 }
