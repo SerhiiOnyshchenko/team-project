@@ -1,22 +1,28 @@
 .contacts {
   background: linear-gradient(
     to bottom,
-    getColor('main-bg-color') 4.5%,
-    getColor('revers-bg-color') 4.5%
+    getColor('main-bg-color') 6%,
+    getColor('revers-bg-color') 6%
   );
   padding-bottom: 113px;
   @media screen and (min-width: 768px) {
     padding-bottom: 165px;
+    background: linear-gradient(
+      to bottom,
+      getColor('main-bg-color') 9%,
+      getColor('revers-bg-color') 9%
+    );
   }
   @media screen and (min-width: 1280px) {
     background-size: 100%;
+    background-position-y: 95px;
     background-image: url(../images/contacts/spot.png),
-      linear-gradient(to bottom, getColor('main-bg-color') 4.5%, getColor('revers-bg-color') 4.5%);
+      linear-gradient(to bottom, getColor('main-bg-color') 1%, getColor('revers-bg-color') 1%);
     background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts/spot-2x.png),
-        linear-gradient(to bottom, getColor('main-bg-color') 4.5%, getColor('revers-bg-color') 4.5%);
+        linear-gradient(to bottom, getColor('main-bg-color') 1%, getColor('revers-bg-color') 1%);
     }
   }
 }
@@ -50,6 +56,9 @@
 
 .contacts__item {
   margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   padding: 43px 21px 43px 20px;
   background-color: getColor('main-bg-color');
@@ -68,35 +77,28 @@
   }
 }
 
-.contacts__wrap-pre-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .contacts__pre-title {
+  display: inline-block;
   margin-bottom: 25px;
-  padding: 5px 15px 5px 15px;
+  padding: 0 24px;
   background-color: #f0d1a5;
-  border-radius: 4px;
+  border-radius: 6px;
 
   font-size: 12px;
-  //line-height: 1.83;
   text-transform: uppercase;
   color: getColor('white-color');
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+    padding: 0 16px;
     font-size: 16px;
+    border-radius: 6px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
 }
 
-.contacts__span-pre-title {
-  padding: 6px 16px 7px 16px;
-  margin: -5px -15px -5px -15px;
-  border-radius: 4px;
+.pre-title {
   background-color: #c2e297;
 }
 
