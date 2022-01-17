@@ -268,7 +268,7 @@
   transform: scale(0);
   animation: milkScale 1000ms linear 1000ms forwards;
 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {
@@ -283,7 +283,7 @@
 
   animation: girlScale 5000ms linear infinite;
 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
