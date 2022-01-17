@@ -87,7 +87,12 @@
 
     color: getColor('black-color');
 
-    background: repeating-linear-gradient(#fafafa, #fafafa 26px, #e1e1e1 29px, #e1e1e1 29px);
+    background: repeating-linear-gradient(
+      getColor('review-section-bg-color'),
+      getColor('review-section-bg-color') 26px,
+      getColor('review-section-emphasis') 29px,
+      getColor('review-section-emphasis') 29px
+    );
   }
 
   &__name {
@@ -115,7 +120,7 @@
   border-radius: unset;
   width: 12.4px;
   height: 11.84px;
-  background-color: #fff;
+  background-color: getColor('white-color');
   &:hover {
     transform: scale(1.18);
   }
