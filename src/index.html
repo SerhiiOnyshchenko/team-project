@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ice cream</title>
+    <title>Ice Cream</title>
+	 <link rel="icon" href="./images/header-hero/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,17 +22,23 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <main>
-      <include src="./partials/hero.html" id="home"></include>
-      <include src="./partials/products.html" id="products"></include>
-      <include src="./partials/about.html" id="about"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer.html"></include>
-      <include src="./partials/contacts.html" id="contacts"></include>
+      <include src="./partials/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+	       <script
+         defer
+         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+         crossorigin="anonymous"
+      ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./index.js"></script>
