@@ -32,6 +32,7 @@
 }
 
 .footer__top-text {
+  display: block;
   color: getColor('red-color');
   font-family: Titan One;
   font-size: 34px;
@@ -75,7 +76,10 @@
 
 .footer__social-list {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+  width: 154px;
+  justify-content: space-between;
+  margin-left: auto;
   margin-top: 43px;
   @media screen and (min-width: 768px) {
     margin-top: 0px;
@@ -86,7 +90,7 @@
 }
 
 .social-item {
-  margin-left: 28px;
+  // margin-left: 28px;
   margin-bottom: 46px;
 }
 
