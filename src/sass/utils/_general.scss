@@ -41,24 +41,24 @@ body {
 	border-radius: 20px;
 	line-height: 1.28;
 	cursor: pointer;
-	transition: background 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .button--red{
 	color: getColor("white-color");
-	background: getColor("button-bg-red-color");
+	background-color: getColor("button-bg-red-color");
 	&:hover,
 	&:focus {
-		background: getColor("button-bg-red-hf-color");
+		background-color: getColor("button-bg-red-hf-color");
 	}
 }
 
 .button--white {
 	color: getColor("red-color");
-	background: getColor("button-bg-white-color");
+	background-color: getColor("button-bg-white-color");
 	&:hover,
 	&:focus {
-		background: getColor("button-bg-white-hf-color");
+		background-color: getColor("button-bg-white-hf-color");
 	}
 }
 
