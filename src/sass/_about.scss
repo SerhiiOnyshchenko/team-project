@@ -64,6 +64,7 @@
 }
 .about-wrap-text {
   padding: 45px 25px;
+
   width: 300px;
   justify-content: center;
   //margin: 0 auto;
@@ -73,9 +74,9 @@
   @media screen and (min-width: 768px) {
     min-width: 450px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   minwidth: 465px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-left: 74px;
+  }
 }
 .about-text-one {
   font-weight: 500;
