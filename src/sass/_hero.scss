@@ -144,14 +144,30 @@
   width: 18px;
   border-radius: 50%;
   background-color: getColor('white-color');
+  color: getColor('red-color');
+
+  scale: 1;
+  transition: transform 300ms linear, background-color 300ms linear, color 300ms linear;
 
   @media screen and (min-width: 1280px) {
     height: 26px;
     width: 26px;
   }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+    background-color: getColor('red-color');
+    color: getColor('white-color');
+  }
 }
 .about-button-icon {
-  fill: getColor('red-color');
+  width: 6px;
+  fill: currentColor;
+
+  @media screen and (min-width: 1280px) {
+    width: 10px;
+  }
 }
 
 .hero-numbers-block {
@@ -329,14 +345,6 @@
   }
   80% {
     transform: scale(110%);
-  }
-  100% {
-    transform: scale(100%);
-  }
-}
-@keyframes milkScale {
-  0% {
-    transform: scale(0);
   }
   100% {
     transform: scale(100%);
